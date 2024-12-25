@@ -23,8 +23,8 @@
         <div class="col-lg-4 text-center d-none d-lg-block">
           <img src="{{ asset('frontend/assets/imgs/page/contact/img.png') }}" alt="joxBox">
         </div>
-        <div class="col-lg-8 mb-40"><span class="font-md color-brand-2 d-inline-block">Contact us</span>
-          <h2 class="mt-5 mb-10">Get in touch</h2>
+        <div class="col-lg-8 mb-40">
+          <h1 class="mt-5 mb-10">Get in touch</h1>
           <p class="font-md color-text-paragraph-2">The right move at the right time saves your investment. live<br
               class="d-none d-lg-block"> the dream of expanding your business.</p>
           <form class="contact-form-style mt-30" id="contact-form" action="" method="post">

@@ -6,10 +6,10 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-12">
-            <h2 class="mb-20">Blog</h2>
+            <h2 class="mb-20">Login</h2>
             <ul class="breadcrumbs">
               <li><a class="home-icon" href="index.html">Home</a></li>
-              <li>Blog</li>
+              <li>Login</li>
             </ul>
           </div>
         </div>

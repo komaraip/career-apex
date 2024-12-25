@@ -3,7 +3,7 @@
         <div class="text-center">
             <h2 class="section-title mb-10 wow animate__animated animate__fadeInUp">Featured Jobs</h2>
             <p class="font-lg color-text-paragraph-2 wow animate__animated animate__fadeInUp">Check out our latest
-                featred job's</p>
+                featured jobs</p>
             <div class="list-tabs mt-40">
                 <ul class="nav nav-tabs" role="tablist">
                     @foreach ($featuredCategories as $category)

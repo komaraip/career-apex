@@ -22,9 +22,16 @@
     <div class="post-loop-grid">
       <div class="container">
         <div class="text-center">
-          <h6 class="f-18 color-text-mutted text-uppercase">Our company</h6>
-          <h2 class="section-title mb-10 wow animate__animated animate__fadeInUp">About Our Company</h2>
-          <p class="font-sm color-text-paragraph wow animate__animated animate__fadeInUp w-lg-50 mx-auto"> {{ config('settings.site_name') }} is more than just a job board; it's a dynamic hub connecting talented individuals with their dream careers and empowering businesses to unlock their full potential. We bridge the gap between job seekers and employers, making the recruitment process smooth, efficient, and accessible for everyone.</p>
+          <h1 class="section-title mb-10 wow animate__animated animate__fadeInUp">About Us</h1>
+          <br>
+          <p class="font-sm color-text-paragraph wow animate__animated animate__fadeInUp w-lg-50 mx-auto">
+            At {{ config('settings.site_name') }},
+            we are more than just a job board. We are a dynamic hub that connects talented individuals with their dream careers while
+            empowering businesses to unlock their full potential. Our platform bridges the gap between job seekers and employers, ensuring a smooth,
+            efficient, and accessible recruitment process for everyone. By providing tailored experiences, advanced matching algorithms, and extensive
+            resources, we facilitate meaningful connections that drive professional growth and business success. Join us at Career Apex, where ambition
+            meets opportunity and together we build a brighter future.
+        </p>
         </div>
 
         <div class="row justify-content-between mt-70">
