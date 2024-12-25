@@ -90,7 +90,7 @@
                                                 <span class="font-xs color-text-mutted">{{ $candidate->title }}</span>
                                                 <div class="rate-reviews-small pt-5">
                                                     @if ($candidate->status === 'available')
-                                                        <p class="font-sm color-text-paragraph-2"><b>I am avaiable</b></p>
+                                                        <p class="font-sm color-text-paragraph-2"><b>I am available</b></p>
                                                     @endif
 
                                                 </div>
