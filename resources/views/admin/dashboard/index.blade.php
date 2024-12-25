@@ -7,7 +7,7 @@
     </div>
     @if (canAccess(['dashboard analytics']))
     <div class="row">
-      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+      {{-- <div class="col-lg-3 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
           <div class="card-icon bg-primary">
             <i class="fas fa-dollar-sign"></i>
@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
       <div class="col-lg-3 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
           <div class="card-icon bg-danger">
@@ -67,7 +67,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+      {{-- <div class="col-lg-3 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
           <div class="card-icon bg-info">
             <i class="fas fa-briefcase"></i>
@@ -81,8 +81,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+      </div> --}}
+      {{-- <div class="col-lg-3 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
           <div class="card-icon bg-warning">
             <i class="fas fa-briefcase"></i>
@@ -96,8 +96,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+      </div> --}}
+      {{-- <div class="col-lg-3 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
           <div class="card-icon bg-danger">
             <i class="fas fa-briefcase"></i>
@@ -111,7 +111,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --}}
       <div class="col-lg-3 col-md-6 col-sm-6 col-12">
         <div class="card card-statistic-1">
           <div class="card-icon bg-primary">

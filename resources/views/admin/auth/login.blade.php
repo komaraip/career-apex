@@ -10,7 +10,7 @@
           </div>
 
           <div class="card card-primary">
-            <div class="card-header"><h4>Login</h4></div>
+            <div class="card-header"><h4>Admin Panel Login</h4></div>
 
             <div class="card-body">
             <!-- Session Status -->
@@ -59,7 +59,7 @@
           </div>
 
           <div class="simple-footer">
-            Copyright &copy; websolutionus {{ date('Y') }}
+            Copyright &copy; {{ date('Y') }}.<a href="http://komaraip.com/"> Career Apex</a> All Right Reserved.
           </div>
         </div>
       </div>

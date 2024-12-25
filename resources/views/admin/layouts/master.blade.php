@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>General Dashboard &mdash; Stisla</title>
+    <title>Admin Dashboard - Career Apex</title>
 
     <!-- General CSS Files -->
+    <link rel="shortcut icon" href="{{ asset('admin/assets/img/logo.png') }}" />
     <link rel="stylesheet" href="{{ asset('admin/assets/modules/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('admin/assets/modules/fontawesome/css/all.min.css') }}">
 
@@ -36,8 +37,7 @@
 
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; {{ date('Y') }} <div class="bullet"></div> Developed By <a
-                        href="http://komaraip.com/">Career Apex</a>
+                    Copyright &copy; {{ date('Y') }}.<a href="http://komaraip.com/"> Career Apex</a> All Right Reserved.
                 </div>
                 <div class="footer-right">
 

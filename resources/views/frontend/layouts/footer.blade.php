@@ -48,7 +48,7 @@
             </div>
 
             <div class="footer-col-2 col-md-2 col-xs-6">
-                <h6 class="mb-20">Resources</h6>
+                <h6 class="mb-20">Team 6</h6>
                 <ul class="menu-footer">
                     @foreach ($footerOne as $menu)
                         <li><a href="{{ $menu['link'] }}">{{ $menu['label'] }}</a></li>
@@ -57,7 +57,7 @@
                 </ul>
             </div>
             <div class="footer-col-3 col-md-2 col-xs-6">
-                <h6 class="mb-20">Community</h6>
+                <h6 class="mb-20">Quick Links</h6>
                 <ul class="menu-footer">
                     @foreach ($footerTwo as $menu)
                     <li><a href="{{ $menu['link'] }}">{{ $menu['label'] }}</a></li>
@@ -65,7 +65,7 @@
                 </ul>
             </div>
             <div class="footer-col-4 col-md-2 col-xs-6">
-                <h6 class="mb-20">Quick links</h6>
+                <h6 class="mb-20">Quick Links</h6>
                 <ul class="menu-footer">
                     @foreach ($footerThree as $menu)
                     <li><a href="{{ $menu['link'] }}">{{ $menu['label'] }}</a></li>
