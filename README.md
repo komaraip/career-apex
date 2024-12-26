@@ -38,7 +38,7 @@ Career Apex directly supports SDG 8 (Decent Work and Economic Growth) through va
 - Presentation : -
 
 ## 📝 Admin Login
-- Email : admin@careerapex@.com
+- Email : admin@careerapex.com
 - Password : admin123
 
 ## 🛠 Tech Stack
