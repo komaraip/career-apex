@@ -2,7 +2,7 @@
 
 ## 📋 Project Overview
 
-Career Apex is a cutting-edge job matching platform that revolutionizes the traditional recruitment process by leveraging technology to create meaningful connections between job seekers and employers. Built with Laravel 11, this platform represents a significant step forward in modernizing the employment ecosystem. Explore the [Project](https://careerapex.komaraip.com/).
+Career Apex is a cutting-edge job matching platform that revolutionizes the traditional recruitment process by leveraging technology to create meaningful connections between job seekers and employers. Built with Laravel 11, this platform represents a significant step forward in modernizing the employment ecosystem.
 
 ### Vision
 To create an inclusive digital employment ecosystem that democratizes access to career opportunities while promoting sustainable economic growth through efficient job matching and skill development.
@@ -38,6 +38,7 @@ Career Apex directly supports SDG 8 (Decent Work and Economic Growth) through va
 - Presentation : -
 
 ## 📝 Admin Login
+- Link : https://careerapex.komaraip.com/admin/login
 - Email : admin@careerapex.com
 - Password : admin123
 
@@ -178,22 +179,19 @@ php artisan serve
 
 ## 👥 Team Members & Contributions
 - **Komara Indra Putra** (Team Leader)
-  - Project architecture
   - Authentication system
   - Role & permission management
-  - User dashboard
+  - Admin dashboard
+  - Front-end page (Jobs, Company, Candidate)
 - **Ahmad Haikal Kamil Shahab**
-  - Job posting features
-  - Category management
-  - Location services
+  - Jobs Management
+  - Company Dashboard
 - **Zaky Fajri Rosmansah**
-  - Blog system
-  - Page builder
+  - Page builder systemn
   - Newsletter system
-  - Location services
 - **Zarin Nurullayla**
-  - Blog system
-  - Page builder
+  - Candidate dashboard
+  - Front-end page (Home Blogs, About, Contact)
 
 ### 📝 THANK YOU
 This project is published. Explore the Project - [CAREER APEX](https://careerapex.komaraip.com/).
