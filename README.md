@@ -13,7 +13,7 @@ To create an inclusive digital employment ecosystem that democratizes access to 
 - Support economic growth through efficient labor market operations
 - Promote decent work conditions and fair employment practices
 
-## 🎯 SDG 8 Implementation: Decent Work and Economic Growth
+## 🎯 SDG 8: Decent Work and Economic Growth
 
 Career Apex directly supports SDG 8 (Decent Work and Economic Growth) through various strategic implementations:
 
@@ -113,36 +113,36 @@ php artisan serve
    - Latest blog posts
    - Review from clients
    - Newsletter
-   - ![ERD Diagram](docs/erd-diagram.png)
+   - ![ERD Diagram](docs/home.png)
 
 2. **Job**
    - Advanced filtering
    - Location-based search
    - Industry categorization
-   - ![ERD Diagram](docs/erd-diagram.png)
+   - ![ERD Diagram](docs/jobs.png)
 
-3. **Company**
+3. **Companies**
    - Company information
    - Active job listings
-   - ![ERD Diagram](docs/erd-diagram.png)
+   - ![ERD Diagram](docs/companies.png)
 
-3. **Candidate**
+3. **Candidates**
    - Candidate information
    - Available candidate listings
-   - ![ERD Diagram](docs/erd-diagram.png)
+   - ![ERD Diagram](docs/candidates.png)
 
-3. **Blog**
+3. **Blogs**
    - News or article about jobs
    - Featured blog listings
-   - ![ERD Diagram](docs/erd-diagram.png)
+   - ![ERD Diagram](docs/blogs.png)
   
 3. **About Us**
    - Job portal website information
-   - ![ERD Diagram](docs/erd-diagram.png)
+   - ![ERD Diagram](docs/aboutus.png)
 
 3. **Contact**
    - Contact information
-   - ![ERD Diagram](docs/erd-diagram.png)
+   - ![ERD Diagram](docs/contact.png)
 
 ### Dashboard Areas
 
@@ -151,21 +151,21 @@ php artisan serve
 - Profile management
 - Job application tracking
 - Saved jobs
-- ![ERD Diagram](docs/erd-diagram.png)
+- ![ERD Diagram](docs/candidate-dash.png)
 
 #### Company Dashboard
 - Analytics dashboard
 - Company profile management
 - Job posting management
 - Applicant tracking
-- ![ERD Diagram](docs/erd-diagram.png)
+- ![ERD Diagram](docs/company-dash.png)
 
 #### Admin Dashboard
 - Analytics dashboard
 - User management
 - Content moderation
 - System settings
-- ![ERD Diagram](docs/erd-diagram.png)
+- ![ERD Diagram](docs/admin-dash.png)
 
 ## 👥 Team Members & Contributions
 - **Komara Indra Putra** (Team Leader)
