@@ -1,230 +1,190 @@
-<!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stars][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+# Career Apex
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/your_username/Career-Apex">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+## 📋 Project Overview
 
-  <h3 align="center">Career Apex</h3>
+Career Apex is a cutting-edge job matching platform that revolutionizes the traditional recruitment process by leveraging technology to create meaningful connections between job seekers and employers. Built with Laravel 11, this platform represents a significant step forward in modernizing the employment ecosystem.
 
-  <p align="center">
-    A comprehensive job matching platform supporting SDG 8
-    <br />
-    <a href="https://careerapex.komaraip.com">View Demo</a>
-    ·
-    <a href="https://github.com/your_username/Career-Apex/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/your_username/Career-Apex/issues">Request Feature</a>
-  </p>
-</div>
+### Vision
+To create an inclusive digital employment ecosystem that democratizes access to career opportunities while promoting sustainable economic growth through efficient job matching and skill development.
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#team-members">Team Members</a></li>
-    <li><a href="#about-the-project">About The Project</a></li>
-    <li><a href="#sdg-impact">SDG Impact</a></li>
-    <li><a href="#database-structure">Database Structure</a></li>
-    <li><a href="#built-with">Built With</a></li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#features">Features</a></li>
-    <li><a href="#page-structure">Page Structure</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
-</details>
+### Mission
+- Bridge the gap between talent and opportunity through innovative technology
+- Facilitate meaningful employment connections
+- Support economic growth through efficient labor market operations
+- Promote decent work conditions and fair employment practices
 
-<!-- TEAM MEMBERS -->
-## Team Members
+## 🎯 SDG 8 Implementation: Decent Work and Economic Growth
 
-* **Komara Indra Putra** (Team Leader)
-  * Project architecture and management
-  * Core system implementation
-  * Multi-authentication system
-  * Dashboard analytics
+Career Apex directly supports SDG 8 (Decent Work and Economic Growth) through various strategic implementations:
 
-* **Ahmad Haikal Kamil Shahab**
-  * Job posting system
-  * Company profile management
-  * Search and filtering functionality
-  * Database optimization
+### Economic Growth Promotion
+- **Digital Transformation**: Accelerating the digitalization of recruitment processes, reducing costs and increasing efficiency
+- **Market Efficiency**: Optimizing job matching through AI-powered algorithms, reducing unemployment periods
+- **Resource Optimization**: Streamlining the hiring process, saving both time and resources for companies and job seekers
 
-* **Zaky Fajri Rosmansah**
-  * User interface development
-  * Frontend integration
-  * Dynamic page builder
-  * Newsletter system
+### Decent Work Support
+- **Transparency**: Mandatory salary information and clear job descriptions to promote fair compensation
+- **Equal Opportunities**: Blind application features to reduce bias in initial screening
+- **Skills Development**: Integrated learning resources and skill assessment tools
+- **Quality Employment**: Focus on formal sector jobs with proper benefits and worker protections
 
-* **Zarin Nurullayla**
-  * User role management
-  * Permission system
-  * Content management
-  * Testing and quality assurance
+### Economic Inclusion
+- **Geographic Reach**: Remote work options and location-flexible positions
+- **Accessibility**: Mobile-responsive design for users with limited computer access
+- **Diverse Opportunities**: Various employment types from entry-level to executive positions
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## 🛠 Tech Stack
+- PHP 8.2
+- Laravel 11
+- MySQL
+- HTML/CSS
+- JavaScript
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+## 🚀 Installation
 
-[![Career Apex Screen Shot][product-screenshot]](https://careerapex.komaraip.com)
+```bash
+# Clone repository
+git clone https://github.com/komaraip/career-apex.git
 
-Career Apex is a comprehensive job matching platform that connects job seekers with companies. Our platform streamlines the recruitment process and provides wider access to employment opportunities in the digital era.
+# Install dependencies
+composer install
+npm install
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+# Configure environment
+cp .env.example .env
+php artisan key:generate
 
-<!-- SDG IMPACT -->
-## SDG Impact
+# Set up database
+php artisan migrate
+php artisan db:seed
 
-This project addresses **SDG 8: Decent Work and Economic Growth** by:
-* Providing an accessible digital platform for job seekers
-* Streamlining the recruitment process for companies
-* Promoting inclusive economic growth
-* Facilitating efficient job market matching
+# Start development server
+php artisan serve
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- DATABASE STRUCTURE -->
-## Database Structure
-
-[Include your ERD diagram here]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- BUILT WITH -->
-## Built With
-
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![jQuery][jQuery.com]][jQuery-url]
-* [Add other technologies used]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-### Prerequisites
-
-* PHP >= 8.1
-* Composer
-* Node.js & NPM
-* MySQL
-
-### Installation
-
-1. Clone the repository
-   ```sh
-   git clone https://github.com/your_username/Career-Apex.git
-   ```
-2. Install Composer dependencies
-   ```sh
-   composer install
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Create .env file
-   ```sh
-   cp .env.example .env
-   ```
-5. Generate application key
-   ```sh
-   php artisan key:generate
-   ```
-6. Configure database in .env
-7. Run migrations
-   ```sh
-   php artisan migrate
-   ```
-8. Start the development server
-   ```sh
-   php artisan serve
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- FEATURES -->
-## Features
+## ⭐ Platform Features
 
 ### Authentication System
-* Multi-user roles (Admin, Company, Candidate)
-* Role-based access control
-* Custom permission management
+- Multi-role authentication (Admin/Company/Candidate)
+- Role-based access control
+- Custom permission management
 
 ### Job Management
-* Dynamic job posting
-* Category management
-* Skills and requirements tracking
-* Location and industry filtering
+- Dynamic job posting
+- Custom fields support
+- Multiple categories
+- Advanced search filters
 
-### Content Management
-* Custom page builder
-* Blog system
-* Newsletter integration
-* Testimonial module
+### Dynamic Content
+- Custom page builder
+- Blog management
+- Newsletter system
+- Testimonial module
 
-### Dashboard & Analytics
-* User activity tracking
-* Application statistics
-* Company engagement metrics
-* Job posting analytics
+### System Administration
+- Menu builder with drag & drop
+- Dynamic settings module
+- Social media integration
+- Multi-image upload system
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## ⭐ User Features 
 
-<!-- PAGE STRUCTURE -->
-## Page Structure
+### For Job Seekers
+- Portfolio showcase
+- Multi-parameter filtering
+- Location-based search
+- Remote work filter
+- Industry-specific searches
+
+### For Employers
+- Multi-location posting
+- Template management
+- Bulk posting capabilities
+
+## 📊 Database Structure
+![ERD Diagram](docs/erd-diagram.png)
+
+## 🏢 Website Structure
 
 ### Public Pages
-* Homepage: Featured jobs, categories, and company showcase
-* Job Listings: Searchable job database with filters
-* Company Directory: Browse and search companies
-* Blog: Industry insights and career advice
+1. **Homepage**
+   - Popular and featured job listings
+   - Quick search functionality
+   - Latest blog posts
+   - Review from clients
+   - Newsletter
+   - ![ERD Diagram](docs/erd-diagram.png)
 
-### Authenticated Pages
-* Admin Dashboard: Site management and analytics
-* Company Dashboard: Job posting and candidate management
-* Candidate Dashboard: Profile and application management
+2. **Job**
+   - Advanced filtering
+   - Location-based search
+   - Industry categorization
+   - ![ERD Diagram](docs/erd-diagram.png)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+3. **Company**
+   - Company information
+   - Active job listings
+   - ![ERD Diagram](docs/erd-diagram.png)
 
-<!-- CONTACT -->
-## Contact
+3. **Candidate**
+   - Candidate information
+   - Available candidate listings
+   - ![ERD Diagram](docs/erd-diagram.png)
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+3. **Blog**
+   - News or article about jobs
+   - Featured blog listings
+   - ![ERD Diagram](docs/erd-diagram.png)
+  
+3. **About Us**
+   - Job portal website information
+   - ![ERD Diagram](docs/erd-diagram.png)
 
-Project Link: [https://github.com/your_username/Career-Apex](https://github.com/your_username/Career-Apex)
+3. **Contact**
+   - Contact information
+   - ![ERD Diagram](docs/erd-diagram.png)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Dashboard Areas
 
-<!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/your_username/Career-Apex.svg?style=for-the-badge
-[contributors-url]: https://github.com/your_username/Career-Apex/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/your_username/Career-Apex.svg?style=for-the-badge
-[forks-url]: https://github.com/your_username/Career-Apex/network/members
-[stars-shield]: https://img.shields.io/github/stars/your_username/Career-Apex.svg?style=for-the-badge
-[stars-url]: https://github.com/your_username/Career-Apex/stargazers
-[issues-shield]: https://img.shields.io/github/issues/your_username/Career-Apex.svg?style=for-the-badge
-[issues-url]: https://github.com/your_username/Career-Apex/issues
-[license-shield]: https://img.shields.io/github/license/your_username/Career-Apex.svg?style=for-the-badge
-[license-url]: https://github.com/your_username/Career-Apex/blob/master/LICENSE.txt
-[product-screenshot]: images/screenshot.png
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[jQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[jQuery-url]: https://jquery.com
+#### Candidate Dashboard
+- Analytics dashboard
+- Profile management
+- Job application tracking
+- Saved jobs
+- ![ERD Diagram](docs/erd-diagram.png)
+
+#### Company Dashboard
+- Analytics dashboard
+- Company profile management
+- Job posting management
+- Applicant tracking
+- ![ERD Diagram](docs/erd-diagram.png)
+
+#### Admin Dashboard
+- Analytics dashboard
+- User management
+- Content moderation
+- System settings
+- ![ERD Diagram](docs/erd-diagram.png)
+
+## 👥 Team Members & Contributions
+- **Komara Indra Putra** (Team Leader)
+  - Project architecture
+  - Authentication system
+  - Role & permission management
+  - User dashboard
+- **Ahmad Haikal Kamil Shahab**
+  - Job posting features
+  - Category management
+  - Location services
+- **Zaky Fajri Rosmansah**
+  - Blog system
+  - Page builder
+  - Newsletter system
+  - Location services
+- **Zarin Nurullayla**
+  - Blog system
+  - Page builder
+
+### 📝 THANK YOU
+This project is published. Explore the Project - [CAREER APEX](https://careerapex.komaraip.com/).
