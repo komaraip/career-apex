@@ -2,7 +2,7 @@
 
 ## 📋 Project Overview
 
-Career Apex is a cutting-edge job matching platform that revolutionizes the traditional recruitment process by leveraging technology to create meaningful connections between job seekers and employers. Built with Laravel 11, this platform represents a significant step forward in modernizing the employment ecosystem.
+Career Apex is a cutting-edge job matching platform that revolutionizes the traditional recruitment process by leveraging technology to create meaningful connections between job seekers and employers. Built with Laravel 11, this platform represents a significant step forward in modernizing the employment ecosystem. Explore the [Project](https://careerapex.komaraip.com/).
 
 ### Vision
 To create an inclusive digital employment ecosystem that democratizes access to career opportunities while promoting sustainable economic growth through efficient job matching and skill development.
@@ -33,12 +33,17 @@ Career Apex directly supports SDG 8 (Decent Work and Economic Growth) through va
 - **Accessibility**: Mobile-responsive design for users with limited computer access
 - **Diverse Opportunities**: Various employment types from entry-level to executive positions
 
+## 📋 Link Attachment
+- Website : https://careerapex.komaraip.com/
+- Presentation : -
+
 ## 🛠 Tech Stack
-- PHP 8.2
-- Laravel 11
-- MySQL
-- HTML/CSS
+- HTML5
+- CSS3
 - JavaScript
+- PHP v8.2
+- Laravel v11
+- MySQL
 
 ## 🚀 Installation
 
@@ -102,7 +107,7 @@ php artisan serve
 - Bulk posting capabilities
 
 ## 📊 Database Structure
-![ERD Diagram](docs/erd-diagram.png)
+![ERD Diagram](docs/erd.png)
 
 ## 🏢 Website Structure
 
@@ -113,36 +118,36 @@ php artisan serve
    - Latest blog posts
    - Review from clients
    - Newsletter
-   - ![ERD Diagram](docs/home.png)
+   ![ERD Diagram](docs/home.png)
 
 2. **Job**
    - Advanced filtering
    - Location-based search
    - Industry categorization
-   - ![ERD Diagram](docs/jobs.png)
+   ![ERD Diagram](docs/jobs.png)
 
 3. **Companies**
    - Company information
    - Active job listings
-   - ![ERD Diagram](docs/companies.png)
+   ![ERD Diagram](docs/companies.png)
 
 3. **Candidates**
    - Candidate information
    - Available candidate listings
-   - ![ERD Diagram](docs/candidates.png)
+   ![ERD Diagram](docs/candidates.png)
 
 3. **Blogs**
    - News or article about jobs
    - Featured blog listings
-   - ![ERD Diagram](docs/blogs.png)
+   ![ERD Diagram](docs/blogs.png)
   
 3. **About Us**
    - Job portal website information
-   - ![ERD Diagram](docs/aboutus.png)
+   ![ERD Diagram](docs/aboutus.png)
 
 3. **Contact**
    - Contact information
-   - ![ERD Diagram](docs/contact.png)
+   ![ERD Diagram](docs/contact.png)
 
 ### Dashboard Areas
 
@@ -151,21 +156,21 @@ php artisan serve
 - Profile management
 - Job application tracking
 - Saved jobs
-- ![ERD Diagram](docs/candidate-dash.png)
+![ERD Diagram](docs/candidate-dash.png)
 
 #### Company Dashboard
 - Analytics dashboard
 - Company profile management
 - Job posting management
 - Applicant tracking
-- ![ERD Diagram](docs/company-dash.png)
+![ERD Diagram](docs/company-dash.png)
 
 #### Admin Dashboard
 - Analytics dashboard
 - User management
 - Content moderation
 - System settings
-- ![ERD Diagram](docs/admin-dash.png)
+![ERD Diagram](docs/admin-dash.png)
 
 ## 👥 Team Members & Contributions
 - **Komara Indra Putra** (Team Leader)
