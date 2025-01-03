@@ -4,15 +4,6 @@
 
 Career Apex is a cutting-edge job matching platform that revolutionizes the traditional recruitment process by leveraging technology to create meaningful connections between job seekers and employers. Built with Laravel 11, this platform represents a significant step forward in modernizing the employment ecosystem.
 
-### Vision
-To create an inclusive digital employment ecosystem that democratizes access to career opportunities while promoting sustainable economic growth through efficient job matching and skill development.
-
-### Mission
-- Bridge the gap between talent and opportunity through innovative technology
-- Facilitate meaningful employment connections
-- Support economic growth through efficient labor market operations
-- Promote decent work conditions and fair employment practices
-
 ## 🎯 SDG 8: Decent Work and Economic Growth
 
 Career Apex directly supports SDG 8 (Decent Work and Economic Growth) through various strategic implementations:
@@ -35,7 +26,6 @@ Career Apex directly supports SDG 8 (Decent Work and Economic Growth) through va
 
 ## 🌐 Link Attachment
 - Website : https://careerapex.komaraip.com/
-- Presentation : -
 
 ## 📝 Admin Login
 - Link : https://careerapex.komaraip.com/admin/login
