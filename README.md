@@ -6,23 +6,9 @@ Career Apex is a cutting-edge job matching platform that revolutionizes the trad
 
 ## 🎯 SDG 8: Decent Work and Economic Growth
 
-Career Apex directly supports SDG 8 (Decent Work and Economic Growth) through various strategic implementations:
-
-### Economic Growth Promotion
-- **Digital Transformation**: Accelerating the digitalization of recruitment processes, reducing costs and increasing efficiency
-- **Market Efficiency**: Optimizing job matching through AI-powered algorithms, reducing unemployment periods
-- **Resource Optimization**: Streamlining the hiring process, saving both time and resources for companies and job seekers
-
-### Decent Work Support
-- **Transparency**: Mandatory salary information and clear job descriptions to promote fair compensation
-- **Equal Opportunities**: Blind application features to reduce bias in initial screening
-- **Skills Development**: Integrated learning resources and skill assessment tools
-- **Quality Employment**: Focus on formal sector jobs with proper benefits and worker protections
-
-### Economic Inclusion
-- **Geographic Reach**: Remote work options and location-flexible positions
-- **Accessibility**: Mobile-responsive design for users with limited computer access
-- **Diverse Opportunities**: Various employment types from entry-level to executive positions
+Career Apex mendukung SDG 8 (Decent Work and Economic Growth) melalui berbagai strategi. Dengan mempercepat digitalisasi dalam rekrutmen, dan menyederhanakan proses perekrutan, kami mendorong pertumbuhan ekonomi, mengurangi biaya, dan meningkatkan efisiensi untuk perusahaan dan pencari kerja.
+- Untuk Decent Work, memastikan transparansi dengan informasi gaji wajib dan deskripsi pekerjaan yang jelas.
+- Untuk Economic Growth, menawarkan opsi kerja jarak jauh, posisi fleksibel lokasi, dan  menyediakan berbagai peluang, mencakup berbagai jenis pekerjaan dari tingkat pemula hingga posisi eksekutif.
 
 ## 🌐 Link Attachment
 - Website : https://careerapex.komaraip.com/
