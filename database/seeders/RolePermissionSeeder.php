@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class RolePermissionSeeder extends Seeder
 {
@@ -178,7 +179,7 @@ class RolePermissionSeeder extends Seeder
             ),
         );
 
-        \DB::table('permissions')->insert($permissions);
+        DB::table('permissions')->insert($permissions);
 
         $roles = array(
             array(
@@ -190,7 +191,7 @@ class RolePermissionSeeder extends Seeder
             ),
         );
 
-        \Db::table('roles')->insert($roles);
+        DB::table('roles')->insert($roles);
 
         $role_has_permissions = array(
             array(
@@ -199,10 +200,6 @@ class RolePermissionSeeder extends Seeder
             ),
             array(
                 "permission_id" => 2,
-                "role_id" => 1,
-            ),
-            array(
-                "permission_id" => 3,
                 "role_id" => 1,
             ),
             array(
@@ -258,10 +255,6 @@ class RolePermissionSeeder extends Seeder
                 "role_id" => 1,
             ),
             array(
-                "permission_id" => 17,
-                "role_id" => 1,
-            ),
-            array(
                 "permission_id" => 18,
                 "role_id" => 1,
             ),
@@ -274,10 +267,6 @@ class RolePermissionSeeder extends Seeder
                 "role_id" => 1,
             ),
             array(
-                "permission_id" => 21,
-                "role_id" => 1,
-            ),
-            array(
                 "permission_id" => 22,
                 "role_id" => 1,
             ),
@@ -287,7 +276,7 @@ class RolePermissionSeeder extends Seeder
             ),
         );
 
-        \DB::table('role_has_permissions')->insert($role_has_permissions);
+        DB::table('role_has_permissions')->insert($role_has_permissions);
 
     }
 }

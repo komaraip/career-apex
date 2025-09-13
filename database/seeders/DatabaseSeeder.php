@@ -36,6 +36,8 @@ class DatabaseSeeder extends Seeder
         $this->call(JobEducationSeeder::class);
         $this->call(JobTypeSeeder::class);
         $this->call(JobTagSeeder::class);
+        $this->call(RolePermissionSeeder::class);
+        $this->call(AdminSeeder::class);
 
 
 

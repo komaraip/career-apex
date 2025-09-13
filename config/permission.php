@@ -158,6 +158,37 @@ return [
      */
     // 'permission.wildcard_permission' => Spatie\Permission\WildcardPermission::class,
 
+    /*
+     * When set to true, the method for checking permissions will be registered on the gate.
+     * Set this to false, if you want to implement custom logic for checking permissions.
+     */
+
+    'register_permission_check_method' => true,
+
+    /*
+     * Teams Feature
+     * When set to true the package implements teams using the 'team_foreign_key'.
+     * If you want the migrations to register the 'team_foreign_key', you must
+     * set this to true before doing the migration for the very first time.
+     */
+
+    'teams' => false,
+
+    /*
+     * Passport Client Grant
+     * When set to true, the package will use passport's personal access client for API authentication
+     */
+
+    'use_passport_client_credentials' => false,
+
+    /*
+     * Testing
+     * When set to 'true' this will allow sqlite to use teams feature.
+     * This is mainly for testing purposes.
+     */
+
+    'testing' => false,
+
     /* Cache-specific settings */
 
     'cache' => [

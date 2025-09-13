@@ -3,9 +3,9 @@
 namespace App\Providers;
 
 
-use Gate;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Gate;
 
 class AppServiceProvider extends ServiceProvider
 {

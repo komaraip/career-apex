@@ -4,6 +4,7 @@
 
 use App\Models\Candidate;
 use App\Models\Company;
+use Illuminate\Support\Facades\Auth;
 
 if(!function_exists('hasError')) {
     function hasError($errors, string $name) : ?String
@@ -30,7 +31,7 @@ if(!function_exists('isCompanyProfileComplete')) {
     function isCompanyProfileComplete() : bool
     {
         $requiredFields = ['logo', 'banner', 'bio', 'vision', 'name', 'industry_type_id', 'organization_type_id', 'team_size_id', 'establishment_date', 'phone', 'email', 'country'];
-        $companyProfile = Company::where('user_id', auth()->user()->id)->first();
+        $companyProfile = Company::where('user_id', Auth::user()->id)->first();
 
         foreach($requiredFields as $field) {
             if(empty($companyProfile->{$field})) {
@@ -48,7 +49,7 @@ if(!function_exists('isCandidateProfileComplete')) {
     {
         $requiredFields = ['experience_id', 'profession_id', 'image', 'full_name', 'birth_date', 'gender', 'bio', 'marital_status', 'country', 'status'];
 
-        $candidateProfile = Candidate::where('user_id', auth()->user()->id)->first();
+        $candidateProfile = Candidate::where('user_id', Auth::user()->id)->first();
 
         foreach($requiredFields as $field) {
             if(empty($candidateProfile->{$field})) {
@@ -102,8 +103,8 @@ if(!function_exists('formatLocation')) {
 if(!function_exists('canAccess')) {
     function canAccess(array $permissions) : bool
     {
-        $permission = auth()->guard('admin')->user()->hasAnyPermission($permissions);
-        $superAdmin = auth()->guard('admin')->user()->hasRole('Super Admin');
+        $permission = Auth::guard('admin')->user()->hasAnyPermission($permissions);
+        $superAdmin = Auth::guard('admin')->user()->hasRole('Super Admin');
 
         if($permission || $superAdmin) {
             return true;
