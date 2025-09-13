@@ -29,14 +29,7 @@ class RolePermissionSeeder extends Seeder
                 "created_at" => "2024-02-06 03:56:31",
                 "updated_at" => "2024-02-06 03:56:31",
             ),
-            array(
-                "id" => 3,
-                "name" => "order index",
-                "guard_name" => "admin",
-                "group" => "Order",
-                "created_at" => "2024-02-06 04:41:50",
-                "updated_at" => "2024-02-06 04:41:50",
-            ),
+
             array(
                 "id" => 4,
                 "name" => "job category create",
@@ -141,14 +134,7 @@ class RolePermissionSeeder extends Seeder
                 "created_at" => "2024-02-06 04:51:23",
                 "updated_at" => "2024-02-06 04:51:23",
             ),
-            array(
-                "id" => 17,
-                "name" => "price plan",
-                "guard_name" => "admin",
-                "group" => "Price Plan",
-                "created_at" => "2024-02-06 04:51:54",
-                "updated_at" => "2024-02-06 04:51:54",
-            ),
+
             array(
                 "id" => 18,
                 "name" => "news letter",
@@ -173,14 +159,7 @@ class RolePermissionSeeder extends Seeder
                 "created_at" => "2024-02-06 04:53:58",
                 "updated_at" => "2024-02-06 04:53:58",
             ),
-            array(
-                "id" => 21,
-                "name" => "payment settings",
-                "guard_name" => "admin",
-                "group" => "Payment Settings",
-                "created_at" => "2024-02-06 04:54:36",
-                "updated_at" => "2024-02-06 04:54:36",
-            ),
+
             array(
                 "id" => 22,
                 "name" => "site settings",

@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Models\UserPlan;
+
 use Gate;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;

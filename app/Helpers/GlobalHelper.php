@@ -72,17 +72,7 @@ if(!function_exists('formatDate')) {
     }
 }
 
-/** store plan info in session */
-if(!function_exists('storePlanInformation')) {
-    function storePlanInformation()
-    {
-        session()->forget('user_plan');
-        session([
-            'user_plan' => isset(auth()->user()?->company?->userPlan) ?
-                auth()->user()->company->userPlan : []
-        ]);
-    }
-}
+
 
 /** format location */
 if(!function_exists('formatLocation')) {
@@ -106,20 +96,7 @@ if(!function_exists('formatLocation')) {
     }
 }
 
-/** format location */
-if(!function_exists('calculateEarnings')) {
-    function calculateEarnings($amounts)
-    {
 
-        $total = 0;
-        foreach($amounts as $value){
-            $amount = intval(preg_replace('/[^0-9]/', '', $value));
-            $total += $amount;
-        }
-
-        return $total;
-    }
-}
 
 /** check permission */
 if(!function_exists('canAccess')) {

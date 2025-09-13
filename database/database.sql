@@ -977,13 +977,8 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 	(21, '2023_12_26_062857_create_candidate_skills_table', 1),
 	(22, '2023_12_27_031235_create_candidate_experiences_table', 1),
 	(23, '2023_12_28_043744_create_candidate_education_table', 1),
-	(24, '2024_01_01_091246_create_plans_table', 1),
-	(25, '2024_01_02_050030_add_show_at_home_to_plans', 1),
-	(26, '2024_01_02_091108_create_payment_settings_table', 1),
-	(27, '2024_01_03_061551_create_site_settings_table', 1),
-	(28, '2024_01_04_055809_create_orders_table', 1),
-	(29, '2024_01_04_095501_create_user_plans_table', 1),
-	(30, '2024_01_09_035110_create_job_categories_table', 1),
+	(24, '2024_01_03_061551_create_site_settings_table', 1),
+	(25, '2024_01_09_035110_create_job_categories_table', 1),
 	(31, '2024_01_09_055023_create_education_table', 1),
 	(32, '2024_01_09_065443_create_job_types_table', 1),
 	(33, '2024_01_09_092041_create_salary_types_table', 1),
@@ -1043,27 +1038,7 @@ INSERT INTO `model_has_roles` (`role_id`, `model_type`, `model_id`) VALUES
 	(3, 'App\\Models\\Admin', 4),
 	(4, 'App\\Models\\Admin', 5);
 
--- membuang struktur untuk table komarai1_ca_fix.orders
-CREATE TABLE IF NOT EXISTS `orders` (
-  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `company_id` bigint unsigned NOT NULL,
-  `plan_id` bigint unsigned NOT NULL,
-  `package_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `transaction_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `order_id` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `payment_provider` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `amount` double NOT NULL,
-  `paid_in_currency` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `default_amount` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `payment_status` enum('paid','unpaid') CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `orders_company_id_foreign` (`company_id`),
-  CONSTRAINT `orders_company_id_foreign` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Membuang data untuk tabel komarai1_ca_fix.orders: ~1 rows (lebih kurang)
 
 -- membuang struktur untuk table komarai1_ca_fix.organization_types
 CREATE TABLE IF NOT EXISTS `organization_types` (
@@ -1096,38 +1071,7 @@ CREATE TABLE IF NOT EXISTS `password_reset_tokens` (
 INSERT INTO `password_reset_tokens` (`email`, `token`, `created_at`) VALUES
 	('admin@careerapex.com', '$2y$12$hemV3AX35o47IGqEMR81O.q0i7YqtxkIbxooEU4sNUnVBeSFBL.U6', '2024-12-25 07:16:47');
 
--- membuang struktur untuk table komarai1_ca_fix.payment_settings
-CREATE TABLE IF NOT EXISTS `payment_settings` (
-  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `value` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci,
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Membuang data untuk tabel komarai1_ca_fix.payment_settings: ~20 rows (lebih kurang)
-INSERT INTO `payment_settings` (`id`, `key`, `value`, `created_at`, `updated_at`) VALUES
-	(1, 'paypal_status', 'active', '2024-01-02 21:36:16', '2024-01-07 22:31:01'),
-	(2, 'paypal_account_mode', 'sandbox', '2024-01-02 21:36:16', '2024-01-02 21:36:16'),
-	(3, 'paypal_country_name', 'US', '2024-01-02 21:36:16', '2024-01-02 21:36:16'),
-	(4, 'paypal_currency_name', 'USD', '2024-01-02 21:36:16', '2024-01-03 22:11:42'),
-	(5, 'paypal_currency_rate', '1', '2024-01-02 21:36:16', '2024-01-03 22:11:42'),
-	(6, 'paypal_client_id', 'your_paypal_client_id_here', '2024-01-02 21:36:16', '2024-01-03 03:41:24'),
-	(7, 'paypal_client_secret', 'your_paypal_client_secret_here', '2024-01-02 21:36:16', '2024-01-03 03:41:24'),
-	(8, 'paypal_app_id', 'Client_app_id', '2024-01-02 21:36:16', '2024-01-02 21:36:16'),
-	(9, 'stripe_status', 'active', '2024-01-05 23:34:39', '2024-01-05 23:34:39'),
-	(10, 'stripe_country_name', 'US', '2024-01-05 23:34:39', '2024-01-05 23:34:39'),
-	(11, 'stripe_currency_name', 'USD', '2024-01-05 23:34:39', '2024-01-05 23:34:39'),
-	(12, 'stripe_currency_rate', '1', '2024-01-05 23:34:39', '2024-01-05 23:34:39'),
-	(13, 'stripe_publishable_key', 'pk_test_your_stripe_publishable_key_here', '2024-01-05 23:34:39', '2024-01-05 23:34:39'),
-	(14, 'stripe_secret_key', 'sk_test_your_stripe_secret_key_here', '2024-01-05 23:34:39', '2024-01-05 23:34:39'),
-	(15, 'razorpay_status', 'active', '2024-01-06 03:41:18', '2024-01-06 03:41:18'),
-	(16, 'razorpay_country_name', 'IN', '2024-01-06 03:41:18', '2024-01-06 03:41:18'),
-	(17, 'razorpay_currency_name', 'INR', '2024-01-06 03:41:18', '2024-01-06 03:41:18'),
-	(18, 'razorpay_currency_rate', '83.19', '2024-01-06 03:41:18', '2024-01-06 03:41:18'),
-	(19, 'razorpay_key', 'rzp_test_your_razorpay_key_here', '2024-01-06 03:41:18', '2024-01-06 04:28:38'),
-	(20, 'razorpay_secret_key', 'your_razorpay_secret_key_here', '2024-01-06 03:41:18', '2024-01-06 04:28:38');
 
 -- membuang struktur untuk table komarai1_ca_fix.permissions
 CREATE TABLE IF NOT EXISTS `permissions` (
@@ -1186,24 +1130,7 @@ CREATE TABLE IF NOT EXISTS `personal_access_tokens` (
 
 -- Membuang data untuk tabel komarai1_ca_fix.personal_access_tokens: ~0 rows (lebih kurang)
 
--- membuang struktur untuk table komarai1_ca_fix.plans
-CREATE TABLE IF NOT EXISTS `plans` (
-  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `label` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
-  `price` double NOT NULL,
-  `job_limit` int NOT NULL,
-  `featured_job_limit` int NOT NULL,
-  `highlight_job_limit` int NOT NULL,
-  `profile_verified` tinyint(1) NOT NULL DEFAULT '0',
-  `recommended` tinyint(1) NOT NULL DEFAULT '0',
-  `frontend_show` tinyint(1) NOT NULL DEFAULT '0',
-  `show_at_home` tinyint(1) NOT NULL DEFAULT '0',
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Membuang data untuk tabel komarai1_ca_fix.plans: ~1 rows (lebih kurang)
 
 -- membuang struktur untuk table komarai1_ca_fix.professions
 CREATE TABLE IF NOT EXISTS `professions` (
@@ -1631,23 +1558,7 @@ INSERT INTO `users` (`id`, `name`, `image`, `email`, `email_verified_at`, `role`
 	(52, 'Bank Central Asia', '/default-uploads/avatar.png', 'hrd@bca.com', NULL, 'company', '$2y$12$XlwbWdeR3J.n6jr9Ht/1YeYafP02fD3DUSq9Tj21DrICWpLPKd9hu', NULL, '2024-12-25 01:57:14', '2024-12-25 01:57:14'),
 	(53, 'Pertamina', '/default-uploads/avatar.png', 'hrd@pertamina.com', NULL, 'company', '$2y$12$yJ5b1kdpdQC1pOO4cL4PWeVzs5TuwioUMlcpD.7vCJot6aKzy9tDy', NULL, '2024-12-25 01:58:15', '2024-12-25 01:58:15');
 
--- membuang struktur untuk table komarai1_ca_fix.user_plans
-CREATE TABLE IF NOT EXISTS `user_plans` (
-  `id` bigint unsigned NOT NULL AUTO_INCREMENT,
-  `company_id` bigint unsigned NOT NULL,
-  `plan_id` bigint unsigned NOT NULL,
-  `job_limit` int NOT NULL DEFAULT '0',
-  `featured_job_limit` int NOT NULL DEFAULT '0',
-  `highlight_job_limit` int NOT NULL DEFAULT '0',
-  `profile_verified` int NOT NULL DEFAULT '0',
-  `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL,
-  PRIMARY KEY (`id`),
-  KEY `user_plans_company_id_foreign` (`company_id`),
-  CONSTRAINT `user_plans_company_id_foreign` FOREIGN KEY (`company_id`) REFERENCES `companies` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
--- Membuang data untuk tabel komarai1_ca_fix.user_plans: ~1 rows (lebih kurang)
 
 -- membuang struktur untuk table komarai1_ca_fix.why_choose_us
 CREATE TABLE IF NOT EXISTS `why_choose_us` (

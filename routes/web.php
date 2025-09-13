@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\Frontend\FrontendJobPageController;
-use App\Http\Controllers\Admin\PaymentController;
 use App\Http\Controllers\Fronted\CandidateDashboardController;
 use App\Http\Controllers\Frontend\AboutUsPageController;
 use App\Http\Controllers\Frontend\CandidateEductionController;
@@ -9,11 +8,8 @@ use App\Http\Controllers\Frontend\CandidateExperienceController;
 use App\Http\Controllers\Frontend\CandidateJobBookmarkController;
 use App\Http\Controllers\Frontend\CandidateMyJobController;
 use App\Http\Controllers\Frontend\CandidateProfileController;
-use App\Http\Controllers\Frontend\CheckoutPageController;
 use App\Http\Controllers\Frontend\CompanyDashboardController;
-use App\Http\Controllers\Frontend\CompanyOrderController;
 use App\Http\Controllers\Frontend\CompanyProfileController;
-use App\Http\Controllers\Frontend\CompnayOrderController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\FrontendBlogPageController;
 use App\Http\Controllers\Frontend\FrontendCandidatePageController;
@@ -22,7 +18,6 @@ use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\jobController;
 use App\Http\Controllers\Frontend\LocationController;
 use App\Http\Controllers\Frontend\NewsletterController;
-use App\Http\Controllers\Frontend\PricingPageController;
 use App\Http\Controllers\ProfileController;
 use App\Models\CandidateExperience;
 use Illuminate\Support\Facades\Route;
@@ -58,8 +53,7 @@ Route::get('companies/{slug}', [FrontendCompanyPageController::class, 'show'])->
 Route::get('candidates', [FrontendCandidatePageController::class, 'index'])->name('candidates.index');
 Route::get('candidates/{slug}', [FrontendCandidatePageController::class, 'show'])->name('candidates.show');
 
-Route::get('pricing', PricingPageController::class)->name('pricing.index');
-Route::get('checkout/{plan_id}', CheckoutPageController::class)->name('checkout.index');
+
 
 /** Find a job route */
 Route::get('jobs', [FrontendJobPageController::class, 'index'])->name('jobs.index');
@@ -133,29 +127,9 @@ Route::group(
     Route::post('/profile/account-info', [CompanyProfileController::class, 'updateAccountInfo'])->name('profile.account-info');
     Route::post('/profile/password-update', [CompanyProfileController::class, 'updatePassword'])->name('profile.password-update');
 
-    /** Order Routes */
-    Route::get('orders', [CompanyOrderController::class, 'index'])->name('orders.index');
-    Route::get('orders/{id}', [CompanyOrderController::class, 'show'])->name('orders.show');
-    Route::get('orders/invoice/{id}', [CompanyOrderController::class, 'invoice'])->name('orders.invoice');
-
     /** Job Routes */
     Route::get('applications/{id}', [JobController::class, 'applications'])->name('job.applications');
     Route::resource('jobs', JobController::class);
-
-    /**Payment Routes */
-    Route::get('payment/success', [PaymentController::class, 'paymentSuccess'])->name('payment.success');
-    Route::get('payment/error', [PaymentController::class, 'paymentError'])->name('payment.error');
-
-    Route::get('paypal/payment', [PaymentController::class, 'payWithPaypal'])->name('paypal.payment');
-    Route::get('paypal/success', [PaymentController::class, 'paypalSuccess'])->name('paypal.success');
-    Route::get('paypal/cancel', [PaymentController::class, 'paypalCancel'])->name('paypal.cancel');
-
-    Route::get('stripe/payment', [PaymentController::class, 'payWithStripe'])->name('stripe.payment');
-    Route::get('stripe/success', [PaymentController::class, 'stripeSuccess'])->name('stripe.success');
-    Route::get('stripe/cancel', [PaymentController::class, 'stripeCancel'])->name('stripe.cancel');
-
-    Route::get('razorpay-redirect', [PaymentController::class, 'razorpayRedirect'])->name('razorpay-redirect');
-    Route::post('razorpay/payment', [PaymentController::class, 'payWithRazorpay'])->name('razorpay.payment');
 });
 
 

@@ -7,7 +7,7 @@ use App\Models\Blog;
 use App\Models\Candidate;
 use App\Models\Company;
 use App\Models\Job;
-use App\Models\Order;
+
 use App\Traits\Searchable;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
@@ -22,8 +22,6 @@ class DashboardController extends Controller
     }
 
     function index() : View {
-        $amounts = Order::pluck('default_amount')->toArray();
-        $totalEarnings = calculateEarnings($amounts);
         $totalCandidates = Candidate::count();
         $totalCompanies = Company::count();
         $totalJobs = Job::count();
@@ -37,6 +35,6 @@ class DashboardController extends Controller
         $jobs = $query->where('status', 'pending')->orderBy('id', 'DESC')->paginate(20);
 
 
-        return view('admin.dashboard.index', compact('totalEarnings', 'totalCandidates', 'totalCompanies', 'totalJobs', 'activeJobs', 'expiredJobs', 'pendingJobs', 'totalBlogs', 'jobs'));
+        return view('admin.dashboard.index', compact('totalCandidates', 'totalCompanies', 'totalJobs', 'activeJobs', 'expiredJobs', 'pendingJobs', 'totalBlogs', 'jobs'));
     }
 }
