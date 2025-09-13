@@ -29,6 +29,9 @@ Homestead.json
 .phpactor.json
 auth.json
 
+# Database files
+/database/database.sql
+
 # User uploaded files (should not be committed)
 /public/uploads/*
 !/public/uploads/.gitkeep
