@@ -28,3 +28,14 @@ Homestead.json
 .env.production
 .phpactor.json
 auth.json
+
+# User uploaded files (should not be committed)
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# Generated/cache files in public
+/public/storage
+/public/hot
+/public/mix-manifest.json
+/public/js/app.js
+/public/css/app.css
